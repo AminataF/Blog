@@ -3,7 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Ami\\Blog\\": "src/"
+            "Blog\\": "src/Blog"
         }
     },
     "authors": [
@@ -14,6 +14,11 @@
     ],
     "minimum-stability": "stable",
     "require-dev": {
-        "phpunit/phpunit": "^11.2"
+        "phpunit/phpunit": "^11.2",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "require": {
+        "guzzlehttp/psr7": "^2.7",
+        "psr/http-message": "^2.0"
     }
 }
